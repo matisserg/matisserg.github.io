@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #ffff;
+}
+
+header{
+    background-color: #0C1713;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000000;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+    border-radius: 50px;
+    transition: 50ms;
+}
+header .logo img:hover{
+   transform: scale(1.2); 
+}
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 70ms;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: #FAF0CA;
+}
+
+.bestiario button{
+    font-weight: 700;
+    color: black;
+    background: #ffff;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.bestiario button:hover{
+    background-color: #FAF0CA ;
+    color: black;
+    transform: scale(1.1);
+}
+
+.Titulo{
+    width: max-content;
+    padding: 20px;
+    margin: auto;
+}
+.logohobbit{
+    transition: all 0.6s ease 0s;
+}
+.logohobbit:hover{
+    transform: scale(1.05);
+}
+.Bloques{
+    font-size: 600px;
+}
+
+.caja1{
+    background-color: #0C1713;
+    color: white;
+    padding: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 15px;
+}
+.titulocaja1{
+    font-size: 40px;
+}
+.caja2{
+    background-color: #0C1713;
+    color: white;
+    padding: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 15px;
+}
+.titulocaja2{
+    font-size: 40px;
+}
+.caja3{
+    background-color: #0C1713;
+    color: white;
+    padding: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 15px;
+}
+.titulocaja3{
+    font-size: 40px;
+}
+.titulobestiario{
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: "Dancing Script";
+    color: #e7b718;
+    text-shadow: 1px 1px 2px black;
+}
+.Bestiario{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+.Carta{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 380px;
+    width: 400px;
+    border-radius: 20px;
+    transition: 0.5s;
+    background: #0C1713;
+}
+.Carta:hover{
+    height: 600px;
+}
+.Carta img{
+    position: absolute;
+    top: 20px;
+    width: 200px;
+	height: 300px;
+	object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Carta:hover img{
+    top: -150px;
+    scale: 0.75;
+}
+.Carta:hover .intro{
+    height: auto;
+    top: 115px;
+    background: #0C1713;
+    visibility: visible;
+    opacity: 1;
+}
+.intro{
+    overflow: hidden;
+    top: 320px;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: #0C1713;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.intro h1{
+    margin: 10px;
+    font-size: 35px;
+}
+.intro p{
+    font-size: 20px;
+    padding: 5px;
+}
+span{
+    font-weight: bold;
+}
